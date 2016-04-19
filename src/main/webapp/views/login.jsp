@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!doctype html>
 <html lang="de">
 <head>
@@ -27,7 +29,7 @@
 </header>
 <div class="main-container">
     <main aria-labelledby="formheadline">
-        <form class="form" method="post">
+        <form class="form" method="post" action="login">
             <h2 id="formheadline" class="registration-headline">Anmelden</h2>
             <div class="form-row">
                 <label class="form-label" for="email-input">

@@ -1,9 +1,13 @@
+at/ac/tuwien/big/we16/ue2/models/Product.class
+at/ac/tuwien/big/we16/ue2/controller/UserController.class
 at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader$Movie.class
 at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.class
+at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader$Book.class
+at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader$Product.class
+at/ac/tuwien/big/we16/ue2/models/User.class
 at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader.class
 at/ac/tuwien/big/we16/ue2/websocket/BigBidConfigurator.class
-at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader$Book.class
 at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader$Music.class
 at/ac/tuwien/big/we16/ue2/service/NotifierService.class
-at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader$Product.class
 at/ac/tuwien/big/we16/ue2/service/ServiceFactory.class
+at/ac/tuwien/big/we16/ue2/controller/ProductController.class

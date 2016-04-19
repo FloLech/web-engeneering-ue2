@@ -1,3 +1,4 @@
+<jsp:useBean id="user" scope="session" class="at.ac.tuwien.big.we16.ue2.models.User" />
 <!doctype html>
 <html lang="de">
 <head>
@@ -31,7 +32,7 @@
             <h2 class="accessibility" id="userinfoheadline">Benutzerdaten</h2>
             <dl class="user-data properties">
                 <dt class="accessibility">Name:</dt>
-                <dd class="user-name">John Doe</dd>
+                <dd class="user-name"><%=user.getFirstName() %> <%=user.getLastName() %></dd>
                 <dt>Kontostand:</dt>
                 <dd>
                     <span class="balance">1.500,00 €</span>
