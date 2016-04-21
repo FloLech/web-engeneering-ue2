@@ -3,6 +3,7 @@ package at.ac.tuwien.big.we16.ue2.controller;
 import at.ac.tuwien.big.we16.ue2.models.User;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -42,15 +43,24 @@ public class UserController extends HttpServlet {
         userPool.put(user.getEmail(), user);
     }
 
+
+    public void init(ServletConfig config) throws ServletException {
+        super.init(config);
+
+
+    }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if(request.getParameter("action").equals("login")) {
+/*        if(request.getParameter("action").equals("login")) {
             HttpSession session = request.getSession(true);
             User user = userPool.get(request.getParameter("email"));
             session.setAttribute("user", user);
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/overview.jsp");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login.jsp");
             dispatcher.forward(request, response);
-        }
+        }*/
 
+        RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/login.jsp");
+        view.forward(request, response);
 
     }
 }

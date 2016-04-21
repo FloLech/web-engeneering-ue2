@@ -1,32 +1,8 @@
+<%@ page import="java.util.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<!doctype html>
-<html lang="de">
-<head>
-    <meta charset="utf-8">
-    <title>BIG Bid - Anmelden</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body data-decimal-separator="," data-grouping-separator=".">
+<%@ include file="header.jsp" %>
 
-<a href="#productsheadline" class="accessibility">Zum Inhalt springen</a>
-
-<header aria-labelledby="bannerheadline">
-    <img class="title-image" src="../images/big-logo-small.png" alt="BIG Bid logo">
-
-    <h1 class="header-title" id="bannerheadline">
-        BIG Bid
-    </h1>
-    <nav aria-labelledby="navigationheadline">
-        <h2 class="accessibility" id="navigationheadline">Navigation</h2>
-        <ul class="navigation-list">
-            <li>
-                <a href="" class="button" accesskey="l">Registrieren</a>
-            </li>
-        </ul>
-    </nav>
-</header>
 <div class="main-container">
     <main aria-labelledby="formheadline">
         <form class="form" method="post" action="login">
@@ -57,7 +33,8 @@
 <footer>
     © 2016 BIG Bid
 </footer>
-<script src="/scripts/jquery.js"></script>
-<script src="/scripts/framework.js"></script>
+<script src="${pageContext.request.contextPath}/resources/scripts/jquery.js"></script>
+<script src="${pageContext.request.contextPath}/resources/scripts/jquery.js"></script>
+<script src="${pageContext.request.contextPath}/resources/scripts/framework.js"></script>
 </body>
 </html>
