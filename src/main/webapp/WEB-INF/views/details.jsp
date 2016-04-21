@@ -65,10 +65,4 @@
         </div>
     </main>
 </div>
-<footer>
-    © 2016 BIG Bid
-</footer>
-<script src="/scripts/jquery.js"></script>
-<script src="/scripts/framework.js"></script>
-</body>
-</html>
+<%@ include file="footer.jsp" %>

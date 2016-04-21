@@ -30,11 +30,4 @@
         </form>
     </main>
 </div>
-<footer>
-    © 2016 BIG Bid
-</footer>
-<script src="${pageContext.request.contextPath}/resources/scripts/jquery.js"></script>
-<script src="${pageContext.request.contextPath}/resources/scripts/jquery.js"></script>
-<script src="${pageContext.request.contextPath}/resources/scripts/framework.js"></script>
-</body>
-</html>
+<%@ include file="footer.jsp" %>

@@ -25,6 +25,8 @@ public class Product {
         this.endDate = endDate;
     }
 
+    public Product(){}
+
     public Long getProductId() {
         return productId;
     }

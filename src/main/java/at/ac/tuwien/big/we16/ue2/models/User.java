@@ -25,6 +25,8 @@ public class User {
         this.birthDate = birthDate;
     }
 
+    public User (){}
+
     public Long getUserID() {
         return userID;
     }
@@ -79,5 +81,9 @@ public class User {
 
     public void setBirthDate(SimpleDateFormat birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public String toString (){
+        return "Email:"+this.getEmail()+" Password"+this.getPassword();
     }
 }

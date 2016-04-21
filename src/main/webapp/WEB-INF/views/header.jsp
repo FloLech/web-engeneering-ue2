@@ -20,9 +20,13 @@
   <nav aria-labelledby="navigationheadline">
     <h2 class="accessibility" id="navigationheadline">Navigation</h2>
     <ul class="navigation-list">
+      <c:if test="${sessionScope.user != null}">
       <li>
-        <a href="" class="button" accesskey="l">Registrieren</a>
+        <form action="${pageContext.request.contextPath}/logout" method="post">
+          <input class="button" type="submit" value="Logout" accesskey="l" />
+          </form>
       </li>
+      </c:if>
     </ul>
   </nav>
 </header>
