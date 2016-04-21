@@ -8,7 +8,7 @@
 
     <servlet>
         <servlet-name>User</servlet-name>
-        <servlet-class>at.ac.tuwien.big.we16.ue2.controller.UserController</servlet-class>
+        <servlet-class>at.ac.tuwien.big.we16.ue2.controller.LoginController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>User</servlet-name>

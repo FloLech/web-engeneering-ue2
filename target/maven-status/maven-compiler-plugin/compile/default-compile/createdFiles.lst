@@ -1,6 +1,5 @@
 at/ac/tuwien/big/we16/ue2/models/Product.class
 at/ac/tuwien/big/we16/ue2/controller/LoginController.class
-at/ac/tuwien/big/we16/ue2/controller/UserController.class
 at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader$Movie.class
 at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.class
 at/ac/tuwien/big/we16/ue2/controller/LogoutController.class
