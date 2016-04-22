@@ -1,7 +1,8 @@
 <footer>
   &copy; 2016 BIG Bid
 </footer>
-<script src="/scripts/jquery.js"></script>
-<script src="/scripts/framework.js"></script>
+
+<script src="${pageContext.request.contextPath}/resources/scripts/bigBid.js"></script>
+
 </body>
 </html>

@@ -7,11 +7,11 @@
 
 
     <servlet>
-        <servlet-name>User</servlet-name>
+        <servlet-name>Login</servlet-name>
         <servlet-class>at.ac.tuwien.big.we16.ue2.controller.LoginController</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>User</servlet-name>
+        <servlet-name>Login</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
     <servlet-mapping>

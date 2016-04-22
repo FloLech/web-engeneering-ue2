@@ -1,68 +1,63 @@
 <%@ include file="header.jsp" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <div class="main-container">
-    <aside class="sidebar" aria-labelledby="userinfoheadline">
-        <div class="user-info-container">
-            <h2 class="accessibility" id="userinfoheadline">Benutzerdaten</h2>
-            <dl class="user-data properties">
-                <dt class="accessibility">Name:</dt>
-                <dd class="user-name">John Doe</dd>
-                <dt>Kontostand:</dt>
-                <dd>
-                    <span class="balance">1.500,00 €</span>
-                </dd>
-                <dt>Laufend:</dt>
-                <dd>
-                    <span class="running-auctions-count">0</span>
-                    <span class="auction-label" data-plural="Auktionen" data-singular="Auktion">Auktionen</span>
-                </dd>
-                <dt>Gewonnen:</dt>
-                <dd>
-                    <span class="won-auctions-count">0</span>
-                    <span class="auction-label" data-plural="Auktionen" data-singular="Auktion">Auktionen</span>
-                </dd>
-                <dt>Verloren:</dt>
-                <dd>
-                    <span class="lost-auctions-count">0</span>
-                    <span class="auction-label" data-plural="Auktionen" data-singular="Auktion">Auktionen</span>
-                </dd>
-            </dl>
-        </div>
-        <div class="recently-viewed-container">
-            <h3 class="recently-viewed-headline">Zuletzt angesehen</h3>
-            <ul class="recently-viewed-list"></ul>
-        </div>
-    </aside>
+    <%@ include file="sidebar.jsp" %>
     <main aria-labelledby="productheadline" class="details-container">
         <div class="details-image-container">
-            <img class="details-image" src="../images/the_godfather.png" alt="">
+            <img class="details-image" src="${product.pictureLocation}" alt="">
         </div>
         <div data-product-id="ce510a73-408f-489c-87f9-94817d845773" class="details-data">
-            <h2 class="main-headline" id="productheadline">Der Pate (Film)</h2>
+            <h2 class="main-headline" id="productheadline">${product.name}</h2>
+            <div id="testContainer">
+                <p>hier sollte hallo stehen</p>
+            </div>
 
             <div class="auction-expired-text" style="display:none">
                 <p>
                     Diese Auktion ist bereits abgelaufen.
                     Das Produkt wurde um
-                    <span class="highest-bid">149,08 €</span> an
-                    <span class="highest-bidder">Jane Doe</span> verkauft.
+                    <span class="highest-bid">${product.currentBid} &euro;</span> an
+                    <span class="highest-bidder">${product.bidder.firstName} ${product.bidder.firstName}</span> verkauft.
                 </p>
             </div>
             <p class="detail-time">Restzeit: <span data-end-time="2016,03,14,15,05,19,796"
                                                    class="detail-rest-time js-time-left"></span>
             </p>
-            <form class="bid-form" method="post" action="">
+            <form class="bid-form" method="post" action="${pageContext.request.contextPath}/bid">
                 <label class="bid-form-field" id="highest-price">
-                    <span class="highest-bid">149,08 €</span>
-                    <span class="highest-bidder">Jane Doe</span>
+                    <span class="highest-bid">${product.currentBid} &euro;</span>
+                    <span class="highest-bidder">${highestBidder.firstName} ${highestBidder.lastName}</span>
                 </label>
                 <label class="accessibility" for="new-price"></label>
+                <input type="text" value="<%=user.getEmail() %>" name="email" hidden/>
+                <input type="text" value="${product.productId}" name="productId" hidden/>
                 <input type="number" step="0.01" min="0" id="new-price" class="bid-form-field form-input"
-                       name="new-price" required>
+                       name="bid" required>
                 <p class="bid-error">Es gibt bereits ein höheres Gebot oder der Kontostand ist zu niedrig.</p>
                 <input type="submit" id="submit-price" class="bid-form-field button" name="submit-price" value="Bieten">
             </form>
         </div>
     </main>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("form.bid-form").submit( function(ev) {
+            ev.preventDefault();
+            var that = $(this);
+            url = that.attr('action');
+            type = that.attr('method');
+            contents = that.serialize();
+            $.ajax({
+                url: url,
+                type: type,
+                data: contents,
+                success: function(result){
+                    $('.highest-bid').html(result);
+                }
+            });
+        });
+    });
+</script>
+
 <%@ include file="footer.jsp" %>

@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by Florian on 21.04.16.
  */
-@WebServlet("/logout")
+@WebServlet(name= "Logout", urlPatterns = {"/logout"})
 public class LogoutController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

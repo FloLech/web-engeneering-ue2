@@ -2,6 +2,8 @@ package at.ac.tuwien.big.we16.ue2.controller;
 
 import at.ac.tuwien.big.we16.ue2.models.Product;
 import at.ac.tuwien.big.we16.ue2.models.User;
+import at.ac.tuwien.big.we16.ue2.service.ProductService;
+import at.ac.tuwien.big.we16.ue2.service.UserService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
@@ -18,42 +20,16 @@ import java.util.*;
 /**
  * Created by Florian on 19.04.16.
  */
-@WebServlet(name = "User", urlPatterns = {"/LoginController"})
+@WebServlet(name = "Login", urlPatterns = {"/LoginController"})
 public class LoginController extends HttpServlet {
 
     public LoginController(){super();}
 
-    private Map<String, User> userPool = new HashMap<>(); //performance
-    private LinkedList<Product> products=new LinkedList<>();
+    private UserService userService = new UserService();
+    private Map<String, User> userPool = userService.getUseres();
 
-    public void getProducts (){
-    int productCount=2;
-        //Long productId, String name, Double currentBid, User bidder, String pictureLocation, String pictureDescription, SimpleDateFormat endDate
-        Product FortyLicks = new Product(1l, "Forty Licks", 0.0, null,  "resources/images/rolling_stones.png", null, new SimpleDateFormat("19-04-2016"));
-        Product TheMartian = new Product(2l, "The Martian", 0.0, null,  "resources/images/the_martian.png", null, new SimpleDateFormat("19-04-2016"));
-        Product TheGodfather = new Product(3l, "The Godfather", 0.0, null, "resources/images/the_godfather.png", null, new SimpleDateFormat("19-04-2016"));
-
-            products.add(FortyLicks);
-            products.add(TheMartian);
-            products.add(TheGodfather);
-
-    }
-
-    public void getUsers() {
-
-        //Add dummy data
-        User Florian = new User(1l, "Florian", "Lechleitner", "fl@huangart.at", "1234", 1500.00, new SimpleDateFormat("31-12-1989"));
-        User Daniel = new User(2l, "Daniel", "Ly", "daniel.ly@gmx.at", "1234", 1500.0, new SimpleDateFormat("24-01-1995"));
-        User Klaus = new User(3l, "Klaus", "Rirsch", "klaus.rirsch@gmx.net", "1234", 1500.0, new SimpleDateFormat("01-01-1999"));
-
-        userPool.put(Florian.getEmail(), Florian);
-        userPool.put(Daniel.getEmail(), Daniel);
-        userPool.put(Klaus.getEmail(), Klaus);
-
-    }
-    public void addUser(User user){
-        userPool.put(user.getEmail(), user);
-    }
+    private ProductService productService = new ProductService();
+    private Map<Long, Product> products = productService.getProducts();
 
 
     public void init(ServletConfig config) throws ServletException {
@@ -77,9 +53,6 @@ public class LoginController extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
-        if(userPool.isEmpty()) {
-            getUsers();
-        }
         if(!request.getParameter("email").equals("")&& !request.getParameter("password").equals("")) {
             HttpSession session = request.getSession(true);
             String email= request.getParameter("email");
@@ -90,9 +63,6 @@ public class LoginController extends HttpServlet {
                     session.setAttribute("user", dummy);
                     RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/overview.jsp");
                     try {
-                        if(products.isEmpty()) {
-                            getProducts();
-                        }
                         request.setAttribute("products", products);
                         dispatcher.forward(request, response);
                     }catch (IOException e){

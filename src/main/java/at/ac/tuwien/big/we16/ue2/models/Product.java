@@ -1,5 +1,7 @@
 package at.ac.tuwien.big.we16.ue2.models;
 
+import java.sql.Timestamp;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -13,9 +15,9 @@ public class Product {
     private User bidder;
     private String pictureLocation;
     private String pictureDescription;
-    private SimpleDateFormat endDate;
+    private Timestamp endDate;
 
-    public Product(Long productId, String name, Double currentBid, User bidder, String pictureLocation, String pictureDescription, SimpleDateFormat endDate) {
+    public Product(Long productId, String name, Double currentBid, User bidder, String pictureLocation, String pictureDescription, Timestamp endDate) {
         this.productId = productId;
         this.name = name;
         this.currentBid = currentBid;
@@ -75,11 +77,15 @@ public class Product {
         this.pictureDescription = pictureDescription;
     }
 
-    public SimpleDateFormat getEndDate() {
+    public Timestamp getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(SimpleDateFormat endDate) {
+    public void setEndDate(Timestamp endDate) {
         this.endDate = endDate;
+    }
+
+    public String toString() {
+        return productId+" "+name;
     }
 }
