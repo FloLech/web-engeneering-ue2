@@ -12,7 +12,7 @@
                     <img class="product-image" src="<c:out value="${product.value.pictureLocation}"></c:out>" alt="<c:out value="${product.value.pictureDescription}"></c:out>">
                     <dl class="product-properties properties">
                         <dt>Bezeichnung</dt>
-                        <dd class="product-name"><c:out value="${product.value.name}"></c:out></dd>
+                        <dd class="product-name" ><c:out value="${product.value.name}"></c:out></dd>
                         <dt>Preis</dt>
                         <dd class="product-price" id="productPrice">
                             <c:out value="${product.value.currentBid}"></c:out> &euro;
