@@ -15,9 +15,9 @@ public class Product {
     private User bidder;
     private String pictureLocation;
     private String pictureDescription;
-    private Timestamp endDate;
+    private String endDate;
 
-    public Product(Long productId, String name, Double currentBid, User bidder, String pictureLocation, String pictureDescription, Timestamp endDate) {
+    public Product(Long productId, String name, Double currentBid, User bidder, String pictureLocation, String pictureDescription, String endDate) {
         this.productId = productId;
         this.name = name;
         this.currentBid = currentBid;
@@ -77,11 +77,11 @@ public class Product {
         this.pictureDescription = pictureDescription;
     }
 
-    public Timestamp getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Timestamp endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 

@@ -16,9 +16,9 @@ public class ProductService {
 
     static {
 
-        Product FortyLicks = new Product(1l, "Forty Licks", 0.0, null,  "resources/images/rolling_stones.png", null, Timestamp.valueOf("2017-09-23 10:10:10.0"));
-        Product TheMartian = new Product(2l, "The Martian", 0.0, null,  "resources/images/the_martian.png", null, Timestamp.valueOf("2017-09-23 10:10:10.0"));
-        Product TheGodfather = new Product(3l, "The Godfather", 0.0, null, "resources/images/the_godfather.png", null, Timestamp.valueOf("2017-09-23 10:10:10.0"));
+        Product FortyLicks = new Product(1l, "Forty Licks", 0.0, null,  "resources/images/rolling_stones.png", null, "2016,05,14,15,05,19,796");
+        Product TheMartian = new Product(2l, "The Martian", 0.0, null,  "resources/images/the_martian.png", null, "");
+        Product TheGodfather = new Product(3l, "The Godfather", 0.0, null, "resources/images/the_godfather.png",null, "");
 
         products.put(FortyLicks.getProductId(), FortyLicks);
         products.put(TheMartian.getProductId(), TheMartian);

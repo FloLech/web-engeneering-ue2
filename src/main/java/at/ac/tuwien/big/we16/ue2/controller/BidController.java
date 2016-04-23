@@ -25,6 +25,7 @@ public class BidController extends HttpServlet{
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
         Long productId = Long.parseLong((String) request.getParameter("productId"));
         Product product = productService.getProductById(productId);
+        System.out.println(product);
 
         Double currentBid = product.getCurrentBid();
         Double newBid = Double.parseDouble((String) request.getParameter("bid"));

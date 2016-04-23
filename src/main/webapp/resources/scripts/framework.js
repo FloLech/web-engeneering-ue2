@@ -83,19 +83,22 @@ function writeNewText(el, secs) {
         el.parents(".product").addClass("expired");
     }
 }
-$(".js-time-left").each(function() {
-    var endTime = $(this).data("end-time").split(",");
-    endTime = new Date(endTime[0],endTime[1]-1,endTime[2],endTime[3],endTime[4],endTime[5],endTime[6]);
-    var today = new Date();
-    var diffS = Math.round((endTime - today) / 1000);
-    var that = $(this);
-    writeNewText(that, diffS);
-    setInterval(function () {
-        if (diffS > 0) {
-            diffS--;
-        }
+
+$(document).ready(function() {
+    $(".js-time-left").each(function() {
+        var endTime = $(this).data("end-time").split(",");
+        endTime = new Date(endTime[0],endTime[1]-1,endTime[2],endTime[3],endTime[4],endTime[5],endTime[6]);
+        var today = new Date();
+        var diffS = Math.round((endTime - today) / 1000);
+        var that = $(this);
         writeNewText(that, diffS);
-    }, 1000);
+        setInterval(function () {
+            if (diffS > 0) {
+                diffS--;
+            }
+            writeNewText(that, diffS);
+        }, 1000);
+    });
 });
 
 function formatCurrency(x) {
