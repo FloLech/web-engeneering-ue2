@@ -7,7 +7,6 @@
           <element id="module-output" name="we16-ue2" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-entitymanager:5.1.0.Final" />

@@ -4,23 +4,25 @@
     <list default="true" id="7f443652-ef2a-480e-9c10-8380f34ad8c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader.class" afterPath="$PROJECT_DIR$/target/classes/at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.class" afterPath="$PROJECT_DIR$/target/classes/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/we16_ue2_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/we16_ue2_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/Product.java" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/Product.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java" afterPath="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/bigBid.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/bigBid.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/scripts/framework.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/framework.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2016-04-23" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2016-04-23" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/details_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/details_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/login_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/overview_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/overview_jsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/we16-ue2.iml" afterPath="$PROJECT_DIR$/we16-ue2.iml" />
     </list>
     <ignored path="we16-ue2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="C:\Users\krirs\Desktop\WEB_ENG\ue2\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,29 +43,28 @@
       <file leaf-file-name="BigBidEndpoint.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="452">
+              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#1356#1357#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="1325">
+              <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+              <folding>
+                <element signature="e#1912#1913#0" expanded="true" />
+                <element signature="e#1942#1943#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,8 +72,8 @@
       <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="18" column="125" selection-start-line="18" selection-start-column="125" selection-end-line="18" selection-end-column="125" />
+            <state relative-caret-position="325">
+              <caret line="18" column="134" selection-start-line="18" selection-start-column="134" selection-end-line="18" selection-end-column="134" />
               <folding />
             </state>
           </provider>
@@ -81,8 +82,8 @@
       <file leaf-file-name="details.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-388">
-              <caret line="22" column="83" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+            <state relative-caret-position="239">
+              <caret line="46" column="15" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -91,11 +92,58 @@
       <file leaf-file-name="framework.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/framework.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-79">
-              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="17" />
+            <state relative-caret-position="25">
+              <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="21" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bigBid.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/bigBid.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotifierService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/NotifierService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="37" selection-end-column="20" />
+              <folding>
+                <element signature="e#755#756#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#906#907#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BidController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,14 +168,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java" />
         <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/ServerEndPoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/NotifierService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/scripts/framework.js" />
+        <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java" />
       </list>
     </option>
   </component>
@@ -599,6 +648,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="we16-ue2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ue2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="copyright" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -648,13 +715,22 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/Product.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/User.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/NotifierService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/scripts/bigBid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/scripts/framework.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/at/ac/tuwien/big/we16/ue2/service/NotifierService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.class</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/logs/access_log.2016-04-23</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/details_jsp.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/login_jsp.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/overview_jsp.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -662,37 +738,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/LoginController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/LogoutController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/ProductDetailController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/UserService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/overview.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sidebar.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/1984.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/big-logo-big.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/big-logo-small.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/metallica.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/pride_and_prejudice.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/red_hot_chili_peppers.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/rolling_stones.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/the_godfather.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/the_great_gatsby.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/the_martian.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/images/the_wizard_of_oz.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/scripts/bigBid.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/scripts/framework.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/scripts/jquery.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/styles/style.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/logs/access_log.2016-04-22</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/details_jsp.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/login_jsp.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/WEB_002dINF/views/overview_jsp.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -700,29 +745,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/ProductController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/UserController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/1984.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/big-logo-big.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/big-logo-small.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/metallica.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/pride_and_prejudice.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/red_hot_chili_peppers.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/rolling_stones.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/the_godfather.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/the_great_gatsby.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/the_martian.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/images/the_wizard_of_oz.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/scripts/framework.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/scripts/jquery.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/styles/style.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/details.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/login.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/views/overview.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/logs/access_log.2016-04-13</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/logs/access_log.2016-04-19</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/views/overview_jsp.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/we16-ue2/org/apache/jsp/views/overview_jsp.java</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -1237,16 +1259,16 @@
       <updated>1461090629489</updated>
       <workItem from="1461090632155" duration="1084000" />
       <workItem from="1461262604414" duration="1248000" />
-      <workItem from="1461398987147" duration="7765000" />
+      <workItem from="1461398987147" duration="14807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10097000" />
+    <option name="totallyTimeSpent" value="17139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1255,9 +1277,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13287038" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13935184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1295,14 +1317,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java</url>
-          <line>29</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1367,22 +1382,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1391,47 +1390,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="250">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/NotifierService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="15" column="57" selection-start-line="14" selection-start-column="6" selection-end-line="15" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-          <folding>
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1942#1943#0" expanded="true" />
-            <element signature="e#1988#1989#0" expanded="true" />
-            <element signature="e#2026#2027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="18" column="125" selection-start-line="18" selection-start-column="125" selection-end-line="18" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="22" column="83" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+        <state relative-caret-position="175">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1440,8 +1410,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ScheduledExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/NotifierService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="37" selection-end-column="20" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1454,10 +1445,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="46" column="15" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/models/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1325">
+          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
+          <folding>
+            <element signature="e#1912#1913#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="18" column="134" selection-start-line="18" selection-start-column="134" selection-end-line="18" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/ac/tuwien/big/we16/ue2/controller/BidController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/scripts/framework.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="17" />
+        <state relative-caret-position="25">
+          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

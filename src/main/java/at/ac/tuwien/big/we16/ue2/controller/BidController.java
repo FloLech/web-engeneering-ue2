@@ -6,6 +6,7 @@ import at.ac.tuwien.big.we16.ue2.service.ProductService;
 import at.ac.tuwien.big.we16.ue2.service.UserService;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +20,12 @@ import java.io.IOException;
 @WebServlet(name = "Bid", urlPatterns = {"/bid"})
 public class BidController extends HttpServlet{
 
+    public void init(ServletConfig config) throws ServletException {
+        super.init(config);
+
+
+    }
+
     ProductService productService = new ProductService();
     UserService userService = new UserService();
 
@@ -30,29 +37,33 @@ public class BidController extends HttpServlet{
         Double currentBid = product.getCurrentBid();
         Double newBid = Double.parseDouble((String) request.getParameter("bid"));
 
-        String email = (String)request.getParameter("email");
+        String email = (String) request.getParameter("email");
         User user = userService.getUserByEmail(email);
+        if (user.getCredit() >= newBid) {
+            if (currentBid < newBid) {
+                product.setCurrentBid(newBid);
+                product.setBidder(user);
+                user.setCredit(user.getCredit()-newBid);
 
-        if(currentBid < newBid)
-        {
-            product.setCurrentBid(newBid);
-            product.setBidder(user);
 
-            try {
-                response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
-                response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
-                response.getWriter().write(newBid.toString());
-            } catch (IOException e){
-                e.printStackTrace();
+                try {
+// TODO: 23.04.2016 user benachrichtigen bei ueberbieten 
+                    //   RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/details.jsp");
+                    //  view.forward(request, response);
+                    response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
+                    response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
+
+                    response.getWriter().write(newBid.toString());//FUFU
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
             }
+
 
         }
 
-
-
     }
-
-
 
 }
 

@@ -1,10 +1,14 @@
 package at.ac.tuwien.big.we16.ue2.websocket;
 
 import at.ac.tuwien.big.we16.ue2.service.NotifierService;
+import javafx.scene.control.Alert;
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -39,10 +43,13 @@ public class BigBidEndpoint {
     }
 
     @OnMessage
-    public void onMessage(Session session, String message) {
+    public void onMessage(Session session, String message ) {
         System.out.println("Session: "+ session.getId() +" message: " + message);
-        Map<Session, HttpSession> clients = this.notifierService.getClients();
-        System.out.println(clients);
+    if (message.equals("Timed out: 1")){
+        System.out.println(message);
+
+    }
+
 
     }
 }

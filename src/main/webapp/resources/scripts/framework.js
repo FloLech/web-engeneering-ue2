@@ -91,6 +91,8 @@ function writeNewText(el, secs) {
     }
 }
 
+
+
 $(document).ready(function() {
     $(".js-time-left").each(function() {
         var endTime = $(this).data("end-time").split(",");
@@ -117,12 +119,29 @@ function formatCurrency(x) {
 // change the URL.
 var socket = new WebSocket("ws://localhost:8080/we16-ue2/socket");
 socket.onmessage = function (event) {
-
+    
 
 };
+socket.onmessage = function (event) {
+    console.log(event.data);
+}
+
+
+
 function timerTimedOut(productId) {
     socket.send("Timed out: " + productId);
+    var msg = {
+        type: "message",
+        text: document.getElementById("text").value,
+        id:   productId,
+        date: Date.now()
+}
+    Socket.send(JSON.stringify(msg));
 };
+
+
+// Blank the text input element, ready to receive the next line of text from the user.
+document.getElementById("text").value = "";
 
 
 

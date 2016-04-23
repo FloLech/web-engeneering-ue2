@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_23_04_2016_14_45__Default_" date="1461415515270" recycled="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_04_2016_14_45__Default_/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23.04.2016 14:45 [Default]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+    <option name="AFTER_PATH" value="target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_04_2016_14_45__Default_/createdFiles.lst" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.class" />
+    <option name="AFTER_PATH" value="target/classes/at/ac/tuwien/big/we16/ue2/websocket/BigBidEndpoint.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_04_2016_14_45__Default_/BigBidEndpoint.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/at/ac/tuwien/big/we16/ue2/service/NotifierService.class" />
+    <option name="AFTER_PATH" value="target/classes/at/ac/tuwien/big/we16/ue2/service/NotifierService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_04_2016_14_45__Default_/NotifierService.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader.class" />
+    <option name="AFTER_PATH" value="target/classes/at/ac/tuwien/big/we16/ue2/productdata/JSONDataLoader.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_04_2016_14_45__Default_/JSONDataLoader.class" />
+  </binary>
+</changelist>
