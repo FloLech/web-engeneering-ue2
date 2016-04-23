@@ -1,4 +1,5 @@
 <jsp:useBean id="user" scope="session" class="at.ac.tuwien.big.we16.ue2.models.User" />
+<jsp:useBean id="product" scope="session" class="at.ac.tuwien.big.we16.ue2.models.Product" />
 <aside class="sidebar" aria-labelledby="userinfoheadline">
   <div class="user-info-container">
     <h2 class="accessibility" id="userinfoheadline">Benutzerdaten</h2>

@@ -87,7 +87,7 @@ function writeNewText(el, secs) {
         if(timedOutCalled == false) {
             timerTimedOut(1);
         }
-        timedOutCalled = true;
+
     }
 }
 
@@ -130,13 +130,16 @@ socket.onmessage = function (event) {
 
 function timerTimedOut(productId) {
     socket.send("Timed out: " + productId);
+    timedOutCalled = true;
+
     var msg = {
         type: "message",
-        text: document.getElementById("text").value,
+        text: document.getElementById("productPrice").value,
         id:   productId,
         date: Date.now()
-}
-    Socket.send(JSON.stringify(msg));
+
+    }
+    socket.send(JSON.stringify(msg));
 };
 
 

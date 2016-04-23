@@ -14,7 +14,7 @@
                         <dt>Bezeichnung</dt>
                         <dd class="product-name"><c:out value="${product.value.name}"></c:out></dd>
                         <dt>Preis</dt>
-                        <dd class="product-price">
+                        <dd class="product-price" id="productPrice">
                             <c:out value="${product.value.currentBid}"></c:out> &euro;
                         </dd>
                         <dt>Verbleibende Zeit</dt>

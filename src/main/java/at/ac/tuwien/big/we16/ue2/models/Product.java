@@ -16,6 +16,7 @@ public class Product {
     private String pictureLocation;
     private String pictureDescription;
     private String endDate;
+    private boolean running=false;
 
     public Product(Long productId, String name, Double currentBid, User bidder, String pictureLocation, String pictureDescription, String endDate) {
         this.productId = productId;
@@ -27,6 +28,13 @@ public class Product {
         this.endDate = endDate;
     }
 
+    public boolean getRunning(){
+        return running;
+    }
+
+    public void setRunning(Boolean running){
+        this.running=running;
+    }
     public Product(){}
 
     public Long getProductId() {

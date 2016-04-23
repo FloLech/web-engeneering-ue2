@@ -47,9 +47,9 @@ public class BidController extends HttpServlet{
 
 
                 try {
-// TODO: 23.04.2016 user benachrichtigen bei ueberbieten 
-                    //   RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/details.jsp");
-                    //  view.forward(request, response);
+// TODO: 23.04.2016 user benachrichtigen bei ueberbieten + fenster im fenster
+                    RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/details.jsp");
+                     view.forward(request, response);
                     response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
                     response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
 
@@ -58,6 +58,8 @@ public class BidController extends HttpServlet{
                     e.printStackTrace();
                 }
 
+            }else{
+                return;
             }
 
 
