@@ -26,20 +26,37 @@ public class ProductService {
                 new Product(8L, "The Great Gatsby", 0.0, null, "resources/images/the_great_gatsby.png", null, "2016,04,24,17,08,19,000"),
                 new Product(9L, "1984", 0.0, null, "resources/images/1984.png", null, "2016,04,25,17,08,19,796")};
 
-        for (int i = 0; i < checkRuntime.length; i++) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy,MM,dd HH,mm,ss,SSS");
+        //get current date time with Date()
+        String date = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-SSS").format(new Date());
 
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy,MM,dd HH,mm,ss,SSS");
-            //get current date time with Date()
-            Date date = new Date();
-            System.out.println(dateFormat.format(date));
+        String [] partsToday = date.split("-");
+        System.out.println(date);
+
+        for (int i = 0; i < checkRuntime.length; i++) {
             System.out.println(checkRuntime[i].getEndDate());
-            try {
+            String[] parts = checkRuntime[i].getEndDate().split(",");
+            if (parts.length == partsToday.length) {
+                for (int j = 0; j < parts.length; j++) {
+                    if (Integer.parseInt(parts[j]) > Integer.parseInt(partsToday[j])) {
+                        checkRuntime[i].setRunning(true);
+                        j = parts.length;
+                    } else if (Integer.parseInt(parts[j]) < Integer.parseInt(partsToday[j])) {
+                        checkRuntime[i].setRunning(false);
+                        j = parts.length;
+                    }
+                }
+            /*try {
+                System.out.println(date.before(dateFormat.parse(checkRuntime[i].getEndDate())));
 
             }catch (Exception e){
                 e.printStackTrace();
+            }*/
+
+                products.put(checkRuntime[i].getProductId(), checkRuntime[i]);
             }
 
-            products.put(checkRuntime[i].getProductId(), checkRuntime[i]);
+            System.out.println(checkRuntime[i].getRunning());
         }
     }
 

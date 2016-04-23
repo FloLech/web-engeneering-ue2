@@ -1,7 +1,7 @@
 package at.ac.tuwien.big.we16.ue2.websocket;
 
 import at.ac.tuwien.big.we16.ue2.service.NotifierService;
-import javafx.scene.control.Alert;
+//import javafx.scene.control.Alert;
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.*;
