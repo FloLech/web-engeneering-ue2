@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/styles/style.css">
   <script src="${pageContext.request.contextPath}/resources//scripts/jquery.js"></script>
   <script src="${pageContext.request.contextPath}/resources//scripts/framework.js"></script>
+  <script src="${pageContext.request.contextPath}/resources/scripts/bigBid.js"></script>
 </head>
 <body data-decimal-separator="," data-grouping-separator=".">
 

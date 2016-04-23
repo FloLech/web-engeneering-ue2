@@ -17,6 +17,18 @@ public class NotifierService {
         this.executor = Executors.newSingleThreadScheduledExecutor();
     }
 
+    public static Map<Session, HttpSession> getClients() {
+        return clients;
+    }
+
+    public static void setClients(Map<Session, HttpSession> clients) {
+        NotifierService.clients = clients;
+    }
+
+    public ScheduledExecutorService getExecutor() {
+        return executor;
+    }
+
     /**
      * This method is used by the WebSocket endpoint to save a reference to all
      * connected users. A list of connections is needed so that the users can be

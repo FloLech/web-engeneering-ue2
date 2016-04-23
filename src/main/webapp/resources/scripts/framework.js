@@ -73,6 +73,8 @@ function supportsLocalStorage() {
     }
 }
 
+var timedOutCalled = false;
+
 function writeNewText(el, secs) {
     if (secs > 0) {
         secs--;
@@ -81,6 +83,11 @@ function writeNewText(el, secs) {
     else {
         el.html(el.data("end-text"));
         el.parents(".product").addClass("expired");
+
+        if(timedOutCalled == false) {
+            timerTimedOut(1);
+        }
+        timedOutCalled = true;
     }
 }
 
@@ -108,9 +115,14 @@ function formatCurrency(x) {
 
 // Depending on the setup of your server, servlet, and socket, you may have to
 // change the URL.
-var socket = new WebSocket("ws://localhost:8080/socket");
+var socket = new WebSocket("ws://localhost:8080/we16-ue2/socket");
 socket.onmessage = function (event) {
 
-    /***  write your code here ***/
 
 };
+function timerTimedOut(productId) {
+    socket.send("Timed out: " + productId);
+};
+
+
+

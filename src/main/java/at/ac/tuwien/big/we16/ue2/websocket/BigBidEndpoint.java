@@ -3,11 +3,10 @@ package at.ac.tuwien.big.we16.ue2.websocket;
 import at.ac.tuwien.big.we16.ue2.service.NotifierService;
 
 import javax.servlet.http.HttpSession;
-import javax.websocket.EndpointConfig;
-import javax.websocket.OnClose;
-import javax.websocket.OnOpen;
-import javax.websocket.Session;
+import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * This endpoint listens on the /socket URL.
@@ -37,5 +36,13 @@ public class BigBidEndpoint {
     @OnClose
     public void onClose(Session socketSession) {
         this.notifierService.unregister(socketSession);
+    }
+
+    @OnMessage
+    public void onMessage(Session session, String message) {
+        System.out.println("Session: "+ session.getId() +" message: " + message);
+        Map<Session, HttpSession> clients = this.notifierService.getClients();
+        System.out.println(clients);
+
     }
 }
