@@ -118,11 +118,11 @@ function formatCurrency(x) {
 // Depending on the setup of your server, servlet, and socket, you may have to
 // change the URL.
 var socket = new WebSocket("ws://localhost:8080/we16-ue2/socket");
-socket.onmessage = function (event) {
-    
+socket.onmessage = function (evt,msg) {
+    alert('Server says: hure');
 
 };
-socket.onmessage = function (event) {
+socket.onopen = function (event) {
     console.log(event.data);
 }
 
@@ -131,7 +131,7 @@ socket.onmessage = function (event) {
 function timerTimedOut(productId) {
     socket.send("Timed out: " + productId);
     timedOutCalled = true;
-
+    socket.write("NIGGA!!!!!")
     var msg = {
         type: "message",
         text: document.getElementById("productPrice").value,

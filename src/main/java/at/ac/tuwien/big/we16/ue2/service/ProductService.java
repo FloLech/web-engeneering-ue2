@@ -16,7 +16,7 @@ public class ProductService {
 
     static {
         Product[] checkRuntime = {
-                new Product(1l, "Forty Licks", 0.0, null, "resources/images/rolling_stones.png", null, "2016,04,22,18,43,00,000"),
+                new Product(1l, "Forty Licks", 0.0, null, "resources/images/rolling_stones.png", null, "2016,04,23,19,53,50,000"),
                 new Product(2l, "The Martian", 0.0, null, "resources/images/the_martian.png", null, "2016,04,25,18,01,19,000"),
                 new Product(3l, "The Godfather", 0.0, null, "resources/images/the_godfather.png", null, "2016,04,22,14,02,19,000"),
                 new Product(4L, "Metallica", 0.0, null, "resources/images/metallica.png", null, "2016,04,24,14,02,19,000"),
@@ -34,7 +34,7 @@ public class ProductService {
             System.out.println(dateFormat.format(date));
             System.out.println(checkRuntime[i].getEndDate());
             try {
-                
+
             }catch (Exception e){
                 e.printStackTrace();
             }

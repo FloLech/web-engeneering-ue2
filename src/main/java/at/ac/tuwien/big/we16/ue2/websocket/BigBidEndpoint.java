@@ -45,6 +45,11 @@ public class BigBidEndpoint {
     @OnMessage
     public void onMessage(Session session, String message ) {
         System.out.println("Session: "+ session.getId() +" message: " + message);
+       try {
+           session.getAsyncRemote().sendText("PLZPLZ");
+       }catch (Exception e){
+           e.printStackTrace();
+       }
     if (message.equals("Timed out: 1")){
         System.out.println(message);
 
@@ -52,4 +57,6 @@ public class BigBidEndpoint {
 
 
     }
+
+
 }
