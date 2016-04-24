@@ -39,15 +39,8 @@ public class LoginController extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-/*        if(request.getParameter("action").equals("login")) {
-            HttpSession session = request.getSession(true);
-            User user = userPool.get(request.getParameter("email"));
-            session.setAttribute("user", user);
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/login.jsp");
-            dispatcher.forward(request, response);
-        }*/
 
-        RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/login.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("/views/login.jsp");
         view.forward(request, response);
 
     }
@@ -61,7 +54,7 @@ public class LoginController extends HttpServlet {
             if(dummy!=null){
                 if(dummy.getPassword().equals(password)) {
                     session.setAttribute("user", dummy);
-                    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/overview.jsp");
+                    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/overview.jsp");
                     try {
                         request.setAttribute("products", products);
                         dispatcher.forward(request, response);
@@ -71,7 +64,7 @@ public class LoginController extends HttpServlet {
                 }
             } else {
                 try {
-                    RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/login.jsp");
+                    RequestDispatcher view = request.getRequestDispatcher("/views/login.jsp");
                     view.forward(request, response);
                 }catch (IOException e){
                     e.printStackTrace();

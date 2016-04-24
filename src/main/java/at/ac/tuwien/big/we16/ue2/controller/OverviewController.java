@@ -41,7 +41,7 @@ public class OverviewController  extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 
-    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/overview.jsp");
+    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/overview.jsp");
     try {
         request.setAttribute("products", products);
         dispatcher.forward(request, response);

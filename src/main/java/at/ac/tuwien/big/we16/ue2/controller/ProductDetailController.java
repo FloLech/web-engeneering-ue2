@@ -34,7 +34,7 @@ public class ProductDetailController extends HttpServlet {
         request.setAttribute("product", product);
 
         try {
-            RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/details.jsp");
+            RequestDispatcher view = request.getRequestDispatcher("/views/details.jsp");
             view.forward(request, response);
         }catch (IOException e){
             e.printStackTrace();
