@@ -2,8 +2,12 @@ package at.ac.tuwien.big.we16.ue2.websocket;
 
 import at.ac.tuwien.big.we16.ue2.models.Product;
 import at.ac.tuwien.big.we16.ue2.service.NotifierService;
+<<<<<<< HEAD
 import at.ac.tuwien.big.we16.ue2.service.ProductService;
 import javafx.scene.control.Alert;
+=======
+//import javafx.scene.control.Alert;
+>>>>>>> 0faebeed228fb5245bbea188c6d22d768de053e8
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.*;

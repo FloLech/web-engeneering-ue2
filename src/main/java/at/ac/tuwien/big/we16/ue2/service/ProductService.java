@@ -30,6 +30,7 @@ public class ProductService {
         //get current date time with Date()
         String date = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-SSS").format(new Date());
 
+<<<<<<< HEAD
         String[] partsToday = date.split("-");
 
         Product_List beanME = new Product_List(checkRuntime);
@@ -52,6 +53,40 @@ public class ProductService {
 
 
 
+=======
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy,MM,dd HH,mm,ss,SSS");
+        //get current date time with Date()
+        String date = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-SSS").format(new Date());
+
+        String [] partsToday = date.split("-");
+        System.out.println(date);
+
+        for (int i = 0; i < checkRuntime.length; i++) {
+            System.out.println(checkRuntime[i].getEndDate());
+            String[] parts = checkRuntime[i].getEndDate().split(",");
+            if (parts.length == partsToday.length) {
+                for (int j = 0; j < parts.length; j++) {
+                    if (Integer.parseInt(parts[j]) > Integer.parseInt(partsToday[j])) {
+                        checkRuntime[i].setRunning(true);
+                        j = parts.length;
+                    } else if (Integer.parseInt(parts[j]) < Integer.parseInt(partsToday[j])) {
+                        checkRuntime[i].setRunning(false);
+                        j = parts.length;
+                    }
+                }
+            /*try {
+                System.out.println(date.before(dateFormat.parse(checkRuntime[i].getEndDate())));
+
+            }catch (Exception e){
+                e.printStackTrace();
+            }*/
+
+                products.put(checkRuntime[i].getProductId(), checkRuntime[i]);
+            }
+
+            System.out.println(checkRuntime[i].getRunning());
+        }
+>>>>>>> 0faebeed228fb5245bbea188c6d22d768de053e8
     }
 
 

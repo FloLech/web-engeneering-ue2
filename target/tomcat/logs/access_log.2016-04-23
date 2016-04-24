@@ -1239,6 +1239,7 @@ fe80:0:0:0:0:0:0:1%1 - - [23/Apr/2016:14:00:06 +0200] "GET /we16-ue2/socket HTTP
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:20:51:51 +0200] "POST /we16-ue2/login HTTP/1.1" 200 12376 http-bio-8080-exec-4 41
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:20:51:51 +0200] "GET /we16-ue2/resources//scripts/framework.js HTTP/1.1" 304 - http-bio-8080-exec-6 1
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:20:51:51 +0200] "GET /we16-ue2/socket HTTP/1.1" 101 - http-bio-8080-exec-8 1
+<<<<<<< HEAD
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:21:27:59 +0200] "GET /we16-ue2 HTTP/1.1" 302 - http-bio-8080-exec-1 0
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:21:28:01 +0200] "GET /we16-ue2/ HTTP/1.1" 200 2187 http-bio-8080-exec-2 1571
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:21:28:02 +0200] "GET /we16-ue2/resources//scripts/framework.js HTTP/1.1" 304 - http-bio-8080-exec-4 16
@@ -1295,3 +1296,26 @@ fe80:0:0:0:0:0:0:1%1 - - [23/Apr/2016:14:00:06 +0200] "GET /we16-ue2/socket HTTP
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:21:39:30 +0200] "GET /we16-ue2/socket HTTP/1.1" 101 - http-bio-8080-exec-10 10
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:21:39:34 +0200] "GET /we16-ue2/product?id=2 HTTP/1.1" 200 5031 http-bio-8080-exec-9 1319
 0:0:0:0:0:0:0:1 - - [23/Apr/2016:21:39:34 +0200] "GET /we16-ue2/socket HTTP/1.1" 101 - http-bio-8080-exec-2 7
+=======
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:37 +0200] "GET /we16-ue2 HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:37 +0200] "GET /we16-ue2/ HTTP/1.1" 200 2187 http-bio-8080-exec-2 265
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:37 +0200] "GET /we16-ue2/resources//scripts/jquery.js HTTP/1.1" 304 - http-bio-8080-exec-5 64
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:37 +0200] "GET /we16-ue2/resources/styles/style.css HTTP/1.1" 304 - http-bio-8080-exec-3 68
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:37 +0200] "GET /we16-ue2/resources//scripts/framework.js HTTP/1.1" 200 3918 http-bio-8080-exec-4 66
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:38 +0200] "GET /we16-ue2/resources/images/big-logo-small.png HTTP/1.1" 304 - http-bio-8080-exec-6 16
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:38 +0200] "GET /we16-ue2/socket HTTP/1.1" 101 - http-bio-8080-exec-9 14
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "POST /we16-ue2/login HTTP/1.1" 200 12373 http-bio-8080-exec-10 2215
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources//scripts/jquery.js HTTP/1.1" 304 - http-bio-8080-exec-8 2
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/styles/style.css HTTP/1.1" 304 - http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/big-logo-small.png HTTP/1.1" 304 - http-bio-8080-exec-5 2
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/red_hot_chili_peppers.png HTTP/1.1" 304 - http-bio-8080-exec-7 43
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/rolling_stones.png HTTP/1.1" 304 - http-bio-8080-exec-5 51
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/the_godfather.png HTTP/1.1" 304 - http-bio-8080-exec-6 50
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/the_martian.png HTTP/1.1" 304 - http-bio-8080-exec-1 50
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/the_wizard_of_oz.png HTTP/1.1" 304 - http-bio-8080-exec-5 5
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/the_great_gatsby.png HTTP/1.1" 304 - http-bio-8080-exec-7 5
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/metallica.png HTTP/1.1" 304 - http-bio-8080-exec-2 64
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/pride_and_prejudice.png HTTP/1.1" 304 - http-bio-8080-exec-8 58
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/resources/images/1984.png HTTP/1.1" 304 - http-bio-8080-exec-7 9
+0:0:0:0:0:0:0:1 - - [23/Apr/2016:22:19:52 +0200] "GET /we16-ue2/socket HTTP/1.1" 101 - http-bio-8080-exec-3 2
+>>>>>>> 0faebeed228fb5245bbea188c6d22d768de053e8
