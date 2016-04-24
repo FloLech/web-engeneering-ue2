@@ -3,7 +3,9 @@ package at.ac.tuwien.big.we16.ue2.models;
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Florian on 19.04.16.
@@ -17,6 +19,7 @@ public class Product {
     private String pictureDescription;
     private String endDate;
     private boolean running=false;
+    private List<User> bidders = new ArrayList<>();
 
     public Product(Long productId, String name, Double currentBid, User bidder, String pictureLocation, String pictureDescription, String endDate) {
         this.productId = productId;
@@ -95,5 +98,13 @@ public class Product {
 
     public String toString() {
         return productId+" "+name;
+    }
+
+    public List<User> getBidders() {
+        return bidders;
+    }
+
+    public void setBidders(List<User> bidders) {
+        this.bidders = bidders;
     }
 }

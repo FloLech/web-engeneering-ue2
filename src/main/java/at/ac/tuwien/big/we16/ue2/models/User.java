@@ -14,8 +14,11 @@ public class User {
     private String password;
     private Double credit;
     private SimpleDateFormat birthDate;
+    private int running;
+    private int won;
+    private int lost;
 
-    public User(Long userID, String firstName, String lastName, String email, String password, Double credit, SimpleDateFormat birthDate) {
+    public User(Long userID, String firstName, String lastName, String email, String password, Double credit, SimpleDateFormat birthDate, int running, int won, int lost) {
         this.userID = userID;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -23,6 +26,9 @@ public class User {
         this.password = password;
         this.credit = credit;
         this.birthDate = birthDate;
+        this.running = running;
+        this.won = won;
+        this.lost = lost;
     }
 
     public User (){}
@@ -81,6 +87,30 @@ public class User {
 
     public void setBirthDate(SimpleDateFormat birthDate) {
         this.birthDate = birthDate;
+    }
+
+    public int getRunning() {
+        return running;
+    }
+
+    public void setRunning(int running) {
+        this.running = running;
+    }
+
+    public int getWon() {
+        return won;
+    }
+
+    public void setWon(int won) {
+        this.won = won;
+    }
+
+    public int getLost() {
+        return lost;
+    }
+
+    public void setLost(int lost) {
+        this.lost = lost;
     }
 
     public String toString (){

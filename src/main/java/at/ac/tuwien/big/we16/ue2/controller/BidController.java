@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Florian on 22.04.16.
@@ -39,18 +41,50 @@ public class BidController extends HttpServlet{
         User user = userService.getUserByEmail(email);
         if (user.getCredit() >= newBid) {
             if (currentBid < newBid) {
+
+                User lastBidder = product.getBidder();
+                if(lastBidder != null) {
+                    double lastBidderCredit = lastBidder.getCredit();
+                    double lastBid = product.getCurrentBid();
+                    lastBidder.setCredit(lastBid + lastBidderCredit);
+                }
+
                 product.setCurrentBid(newBid);
                 product.setBidder(user);
                 user.setCredit(user.getCredit()-newBid);
+
+                //User takes part in Auction
+                List<User> bidders = product.getBidders();
+
+                if(!bidders.contains(user)) {
+                    int runningAuctions = user.getRunning();
+                    user.setRunning(runningAuctions + 1);
+                    bidders.add(user);
+                }
+
                 try {
-                    response.setContentType("text/plain");
+                    response.setContentType("application/json");
                     response.setCharacterEncoding("UTF-8");
-                    response.getWriter().write("{\"name\" : \"" + user.getFirstName() + " " + user.getLastName() +"\", \"bid\" : \""+ newBid.toString() + "\"}");
+                    response.getWriter().write("{\"username\" : \"" + user.getFirstName() + " " + user.getLastName() + "\", \"bid\" : \"" + newBid.toString() + "\", \"current\" : \"" + user.getRunning() + "\", \"budget\" : \"" + user.getCredit() + "\"}");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }else{
-                return;
+            } else{
+                try {
+                    response.setContentType("application/json");
+                    response.setCharacterEncoding("UTF-8");
+                    response.getWriter().write("{\"error\" : \"Ihr Gebot ist zu niedrig!\"}");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            try {
+                response.setContentType("application/json");
+                response.setCharacterEncoding("UTF-8");
+                response.getWriter().write("{\"error\" : \"Sie verfügen über zu wenig Geld!\"}");
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }

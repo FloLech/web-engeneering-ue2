@@ -16,9 +16,9 @@ public class UserService {
 
     static {
         //Add dummy data
-        User Florian = new User(1l, "Florian", "Lechleitner", "fl@huangart.at", "1234", 1500.00, new SimpleDateFormat("31-12-1989"));
-        User Daniel = new User(2l, "Daniel", "Ly", "daniel.ly@gmx.at", "1234", 1500.0, new SimpleDateFormat("24-01-1995"));
-        User Klaus = new User(3l, "Klaus", "Rirsch", "klaus.rirsch@gmx.net", "1234", 1500.0, new SimpleDateFormat("01-01-1999"));
+        User Florian = new User(1l, "Florian", "Lechleitner", "fl@huangart.at", "1234", 1500.00, new SimpleDateFormat("31-12-1989"), 0, 0, 0);
+        User Daniel = new User(2l, "Daniel", "Ly", "daniel.ly@gmx.at", "1234", 1500.0, new SimpleDateFormat("24-01-1995"), 0, 0, 0);
+        User Klaus = new User(3l, "Klaus", "Rirsch", "klaus.rirsch@gmx.net", "1234", 1500.0, new SimpleDateFormat("01-01-1999"), 0, 0, 0);
 
         userPool.put(Florian.getEmail(), Florian);
         userPool.put(Daniel.getEmail(), Daniel);

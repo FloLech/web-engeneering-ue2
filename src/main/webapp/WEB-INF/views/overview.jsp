@@ -7,8 +7,8 @@
 
         <c:forEach var="product" items="${products}">
             <div class="product-outer" data-product-id="a066195f-590e-4d4d-bb70-961996b41314">
-                <a href="${pageContext.request.contextPath}/product?id=${product.value.productId}" class="product expired "
-                   title="Mehr Informationen zu Forty Licks">
+                <a href="${pageContext.request.contextPath}/product?id=${product.value.productId}" class="product <c:if test="${product.value.bidder == user}"> highlight</c:if>"
+                   title="Mehr Informationen zu <c:out value="${product.value.name}"></c:out>">
                     <img class="product-image" src="<c:out value="${product.value.pictureLocation}"></c:out>" alt="<c:out value="${product.value.pictureDescription}"></c:out>">
                     <dl class="product-properties properties">
                         <dt>Bezeichnung</dt>

@@ -26,9 +26,11 @@ public class ProductDetailController extends HttpServlet {
         UserService userService = new UserService();
         Product product = productService.getProductById(productId);
 
-        User highestBidder = userService.getUserByEmail("fl@huangart.at");
+        User highestBidder = product.getBidder();
+        if(highestBidder != null ) {
+            request.setAttribute("highestBidder", highestBidder);
+        }
 
-        request.setAttribute("highestBidder", highestBidder);
         request.setAttribute("product", product);
 
         try {
