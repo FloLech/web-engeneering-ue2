@@ -1,5 +1,7 @@
 <jsp:useBean id="user" scope="session" class="at.ac.tuwien.big.we16.ue2.models.User" />
 <jsp:useBean id="product" scope="session" class="at.ac.tuwien.big.we16.ue2.models.Product" />
+<jsp:useBean id="product_list" scope="session" class="at.ac.tuwien.big.we16.ue2.models.Product_List" />
+
 <aside class="sidebar" aria-labelledby="userinfoheadline">
   <div class="user-info-container">
     <h2 class="accessibility" id="userinfoheadline">Benutzerdaten</h2>
@@ -12,7 +14,7 @@
       </dd>
       <dt>Laufend:</dt>
       <dd>
-        <span class="running-auctions-count">0</span>
+        <span class="running-auctions-count"><%=product_list.getRunningCount() %></span>
         <span class="auction-label" data-plural="Auktionen" data-singular="Auktion">Auktionen</span>
       </dd>
       <dt>Gewonnen:</dt>

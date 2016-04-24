@@ -118,15 +118,21 @@ function formatCurrency(x) {
 // Depending on the setup of your server, servlet, and socket, you may have to
 // change the URL.
 var socket = new WebSocket("ws://localhost:8080/we16-ue2/socket");
-socket.onmessage = function (evt,msg) {
-    
-       
+socket.onMessage = function (evt,msg) {
+   var id= onMessage(event)
         
-    alert('Server says: hure'+msg);
+    alert('Server says: hure'+evt.data+msg+evt);
 
 };
-socket.onopen = function (event) {
+
+function onMessage(event) {
+    document.getElementById('').innerHTML += '<br />'
+        + event.data;
+}
+
+socket.onOpen = function (event) {
     console.log(event.data);
+
 }
 
 
@@ -135,9 +141,9 @@ function timerTimedOut(productId) {
     socket.send("Timed out: " + productId);
     timedOutCalled = true;
    
-    var msg = document.getElementById("1").value+" expired";
-   // socket.send(JSON.stringify(msg));
-    socket.alert(msg);
+    //var msg = document.getElementById("1").value+" expired";
+   //socket.send(JSON.stringify(msg));
+    //socket.alert(msg);
 };
 
 

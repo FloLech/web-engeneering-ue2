@@ -1,6 +1,8 @@
 package at.ac.tuwien.big.we16.ue2.websocket;
 
+import at.ac.tuwien.big.we16.ue2.models.Product;
 import at.ac.tuwien.big.we16.ue2.service.NotifierService;
+import at.ac.tuwien.big.we16.ue2.service.ProductService;
 import javafx.scene.control.Alert;
 
 import javax.servlet.http.HttpSession;
@@ -17,6 +19,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @ServerEndpoint(value="/socket", configurator = BigBidConfigurator.class)
 public class BigBidEndpoint {
+    ProductService productService=new ProductService();
     private final NotifierService notifierService;
 
     public BigBidEndpoint(NotifierService notifierService) {
@@ -45,13 +48,10 @@ public class BigBidEndpoint {
     @OnMessage
     public void onMessage(Session session, String message ) {
         System.out.println("Session: "+ session.getId() +" message: " + message);
-       try {
-           session.getAsyncRemote().sendText("PLZPLZ");
-       }catch (Exception e){
-           e.printStackTrace();
-       }
+
     if (message.equals("Timed out: 1")){
-        System.out.println(message);
+
+        session.getAsyncRemote().sendText("Time-Out!!");
 
     }
 
