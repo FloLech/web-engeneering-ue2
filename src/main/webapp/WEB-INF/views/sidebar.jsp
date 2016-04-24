@@ -30,7 +30,33 @@
     </dl>
   </div>
   <div class="recently-viewed-container">
-    <h3 class="recently-viewed-headline">Zuletzt angesehen</h3>
-    <ul class="recently-viewed-list"></ul>
+    <h3 class="recently-viewed-headline">
+      Zuletzt angesehen</h3>
+    <ul class="recently-viewed-list">
+
+    </ul>
   </div>
 </aside>
+
+<script type="text/javascript">
+  function allStorage() {
+
+    var keys = Object.keys(localStorage),
+        i = keys.length;
+
+    if(i > 0) {
+      $('.recently-viewed-headline, .recently-viewed-list').css('display', 'block');
+    }
+
+    while ( i-- ) {
+      var storedNames = JSON.parse(localStorage.getItem(keys[i]));
+      if(storedNames != null) {
+        $('.recently-viewed-list').append('<li><a href="${pageContext.request.contextPath}/product?id=' + storedNames.productId +'">' + storedNames.productName + "</li>");
+      }
+    }
+  }
+
+  $(document).ready(function() {
+    allStorage();
+  });
+</script>

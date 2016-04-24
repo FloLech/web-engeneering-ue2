@@ -17,10 +17,10 @@ public class ProductService {
 
     static {
         Product[] checkRuntime = {
-                new Product(1l, "Forty Licks", 0.0, null, "resources/images/rolling_stones.png", null, "2016,04,24,18,21,50,000"),
-                new Product(2l, "The Martian", 0.0, null, "resources/images/the_martian.png", null, "2016,04,24,15,43,19,000"),
-                new Product(3l, "The Godfather", 0.0, null, "resources/images/the_godfather.png", null, "2016,04,26,14,02,19,000"),
-                new Product(4L, "Metallica", 0.0, null, "resources/images/metallica.png", null,  "2016,04,24,14,54,20,000"),
+                new Product(1l, "Forty Licks", 0.0, null, "resources/images/rolling_stones.png", null, "2016,04,24,20,06,20,000"),
+                new Product(2l, "The Martian", 0.0, null, "resources/images/the_martian.png", null, "2016,04,24,04,43,19,000"),
+                new Product(3l, "The Godfather", 0.0, null, "resources/images/the_godfather.png", null, "2016,04,24,20,08,19,000"),
+                new Product(4L, "Metallica", 0.0, null, "resources/images/metallica.png", null,  "2016,04,28,14,54,20,000"),
                 new Product(5L, "Red Hot Chili Peppers", 0.0, null, "resources/images/red_hot_chili_peppers.png", null, "2016,04,24,17,08,19,000"),
                 new Product(6L, "Pride and Prejudice", 0.0, null, "resources/images/pride_and_prejudice.png", null, "2016,04,25,17,08,19,000"),
                 new Product(7L, "The Wizard of Oz", 0.0, null, "resources/images/the_wizard_of_oz.png", null, "2016,04,24,17,08,19,000"),
@@ -49,19 +49,12 @@ public class ProductService {
             }
         }
         beanME.setRunningCount();
-
-
-
     }
 
 
     public Map<Long, Product> getProducts() {
-
-
         return products;
-
     }
-
 
 
     public Product getProductById(Long id) {

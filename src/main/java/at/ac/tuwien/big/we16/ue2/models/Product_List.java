@@ -7,8 +7,8 @@ import java.util.List;
  * Created by krirs on 23.04.2016.
  for usage as bean in sidebarjsp to determine the list of running auctions
  problems may occur if auctions expire during sessions since the running flag is set on startup (currently not at all)
-
  */
+
 public class Product_List {
     public Product_List(){}
 
@@ -28,17 +28,14 @@ public class Product_List {
                     this.runningCount++;
             }
         }
+
     public void setRunningCountDynamic(){
+        this.runningCount = 0;
         for(Product p: products){
             if(p.getRunning())
                 this.runningCount++;
-            if(!p.getRunning())
-                this.runningCount--;
         }
     }
-
-
-
 
     public int getRunningCount(){
         return this.runningCount;

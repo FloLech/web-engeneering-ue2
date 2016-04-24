@@ -8,10 +8,6 @@
         </div>
         <div data-product-id="ce510a73-408f-489c-87f9-94817d845773" class="details-data">
             <h2 class="main-headline" id="productheadline">${product.name}</h2>
-            <div id="testContainer">
-                <p>hier sollte hallo stehen</p>
-            </div>
-
             <div class="auction-expired-text" style="display:none">
                 <p>
                     Diese Auktion ist bereits abgelaufen.
@@ -41,6 +37,12 @@
 </div>
 
 <script type="text/javascript">
+
+    $(document).ready(function() {
+        var currentProduct = {"productName" : "${product.name}", "productId" : "${product.productId}"};
+        localStorage.setItem("${product.productId}", JSON.stringify(currentProduct));
+    });
+
     $(document).ready(function() {
         $("form.bid-form").submit( function(ev) {
             ev.preventDefault();
@@ -52,8 +54,11 @@
                 url: url,
                 type: type,
                 data: contents,
+                dataType: 'json',
                 success: function(result){
-                    $('.highest-bid').html(result);
+                    console.log(result);
+                    $('.highest-bidder').html(result.name);
+                    $('.highest-bid').html(result.bid + "&euro;");
                 }
             });
         });

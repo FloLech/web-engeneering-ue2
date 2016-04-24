@@ -8,6 +8,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
 public class NotifierService {
+
+    private ProductService productService = new ProductService();
+
     private static Map<Session, HttpSession> clients = new ConcurrentHashMap<>();
     private final ScheduledExecutorService executor;
 
@@ -26,6 +29,7 @@ public class NotifierService {
     }
 
     public ScheduledExecutorService getExecutor() {
+
         return executor;
     }
 

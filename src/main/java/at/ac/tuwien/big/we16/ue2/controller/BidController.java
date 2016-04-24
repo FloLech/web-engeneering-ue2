@@ -22,8 +22,6 @@ public class BidController extends HttpServlet{
 
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-
-
     }
 
     ProductService productService = new ProductService();
@@ -44,29 +42,18 @@ public class BidController extends HttpServlet{
                 product.setCurrentBid(newBid);
                 product.setBidder(user);
                 user.setCredit(user.getCredit()-newBid);
-
-
                 try {
-// TODO: 23.04.2016 user benachrichtigen bei ueberbieten + fenster im fenster
-                    RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/details.jsp");
-                     view.forward(request, response);
-                    response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
-                    response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
-
-                    response.getWriter().write(newBid.toString());//FUFU
+                    response.setContentType("text/plain");
+                    response.setCharacterEncoding("UTF-8");
+                    response.getWriter().write("{\"name\" : \"" + user.getFirstName() + " " + user.getLastName() +"\", \"bid\" : \""+ newBid.toString() + "\"}");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
             }else{
                 return;
             }
-
-
         }
-
     }
-
 }
 
 

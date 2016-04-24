@@ -2,7 +2,7 @@
     Helper functions for the first exercise of the Web Engineering course
 */
 
-/* 
+/*
     checks if native form validation is available.
     Source/Further informations: http://diveintohtml5.info/everything.html
 */
@@ -10,7 +10,7 @@ function hasFormValidation() {
     return 'noValidate' in document.createElement('form');
 }
 
-/* 
+/*
     checks if native date input is available.
     Source/Further informations: http://diveintohtml5.info/everything.html
 */
@@ -28,11 +28,11 @@ var DATE_DELIMITERS = ['/','\\','-'];
 */
 function getNormalizedDateString(selector) {
     value = $(selector).val();
-    
+
     // normalize delimiter to .
-    for(var i = 0; i < DATE_DELIMITERS.length; i++) 
+    for(var i = 0; i < DATE_DELIMITERS.length; i++)
         value = value.split(DATE_DELIMITERS[i]).join(".");
-    
+
     // check if date might be reverse, i.e., yyyy.mm.dd
     rehtml5 = /^(\d{4})\.(\d{1,2})\.(\d{1,2})$/;
     if(regs = value.match(rehtml5))
@@ -51,7 +51,7 @@ function getNormalizedDateString(selector) {
 function secToMMSS(value){
     var minutes = Math.floor(value / 60);
     var seconds = (value % 60);
-    
+
     if(seconds < 10) {
         seconds = "0" + seconds;
     }
@@ -61,7 +61,7 @@ function secToMMSS(value){
     return minutes + ":" + seconds;
 }
 
-/* 
+/*
   checks if native form validation is available.
   Source/Further informations: http://diveintohtml5.info/storage.html
 */
@@ -83,14 +83,14 @@ function writeNewText(el, secs) {
     else {
         el.html(el.data("end-text"));
         el.parents(".product").addClass("expired");
-
-        if(timedOutCalled == false) {
+/*        if(timedOutCalled == false) {
             timerTimedOut(1);
-        }
-
+        }*/
     }
 }
+function notifyNewBid() {
 
+}
 
 
 $(document).ready(function() {
@@ -115,40 +115,40 @@ function formatCurrency(x) {
     return x.toFixed(2).replace(".", $("body").data('decimal-separator')).replace(/\B(?=(\d{3})+(?!\d))/g, $("body").data('grouping-separator')) + "&nbsp;€";
 }
 
-// Depending on the setup of your server, servlet, and socket, you may have to
-// change the URL.
+// Depending on the setup of your server, servlet, and socket, you may have to change the URL.
+/*
 var socket = new WebSocket("ws://localhost:8080/we16-ue2/socket");
-socket.onMessage = function (evt,msg) {
-   var id= onMessage(event)
-        
-    alert('Server says: hure'+evt.data+msg+evt);
 
-};
-
-function onMessage(event) {
-    document.getElementById('').innerHTML += '<br />'
-        + event.data;
-}
-
+//Opening connection
 socket.onOpen = function (event) {
-    console.log(event.data);
+ console.log(event.data);
+ }
 
-}
-
-
-
+//Sending to server
 function timerTimedOut(productId) {
     socket.send("Timed out: " + productId);
     timedOutCalled = true;
-   
+
     //var msg = document.getElementById("1").value+" expired";
-   //socket.send(JSON.stringify(msg));
-    //socket.alert(msg);
+    socket.send(JSON.stringify(msg));
+    //  socket.alert(msg);
+}
+
+//Sent by Server
+socket.onmessage = function (evt) {
+    alert('Server says:'+evt.data);
+
 };
 
 
-// Blank the text input element, ready to receive the next line of text from the user.
-document.getElementById("text").value = "";
+/!*function onMessage(event) {
+    document.getElementById('').innerHTML += '<br />'
+        + event.data;
+}*!/
 
 
 
+
+
+
+*/

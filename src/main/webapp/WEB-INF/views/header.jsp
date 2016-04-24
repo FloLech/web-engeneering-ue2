@@ -15,8 +15,9 @@
 <a href="#productsheadline" class="accessibility">Zum Inhalt springen</a>
 
 <header aria-labelledby="bannerheadline">
+  <a href="${pageContext.request.contextPath}/OverviewController">
   <img class="title-image" src="${pageContext.request.contextPath}/resources/images/big-logo-small.png" alt="BIG Bid logo">
-
+  </a>
   <h1 class="header-title" id="bannerheadline">
     BIG Bid
   </h1>
